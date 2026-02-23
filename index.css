@@ -8,14 +8,14 @@ body {
 
 
 .nav{
-    background-color: #c4c4c4;
-    height: 9vh;
+    background-color: #0e0e31;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     position: fixed;
     top: 0;
+    height: 80px;
 
 
 }
@@ -35,14 +35,11 @@ li{
 
 .nav a{
     text-decoration: none;
-    color: #1a4161;
-    font-weight: bold;
+    color: #fff;
+    font-weight: 500;
     font-size: 20px;
     
 }
-
-
-
 
 
 .info-personal {
