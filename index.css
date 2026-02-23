@@ -6,6 +6,45 @@ body {
 
 }
 
+
+.nav{
+    background-color: #c4c4c4;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+
+}
+
+ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 90px;
+
+}
+
+li{
+
+    list-style-type: none;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #1a4161;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+
+
+
+
 .info-personal {
     min-height: 100vh;
     display: flex;
@@ -155,7 +194,13 @@ h3 {
 
 .boton-ver-proyecto{
     font-size: 12px;
+    
 
+}
+
+.boton-ver-proyecto a{
+    text-decoration: none;
+    color: #000;
 }
 
 .boton-ver-proyecto:hover{
