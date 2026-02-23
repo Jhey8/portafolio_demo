@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -12,17 +12,23 @@
 </head>
 
 <body>
-    <header>
+
+    <header id="content">
         <nav class="nav">
-            <ul>
+
+            <button class="btn-hamb" id="btnHamb" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="menu" id="menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre Mi</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contactame">Contactame</a></li>
+                <li><a href="#contactame">Contáctame</a></li>
             </ul>
-
         </nav>
-
     </header>
     <main>
         <section id="inicio" class="info-personal">
@@ -32,8 +38,9 @@
                 </div>
 
                 <div>
-                    <h1>Hey, <span class="resaltado-celeste">soy Jheymy</span></h1>
-                    <p class="info-inicio">Estudiante de <span class="resaltado-amarillo">Ingeniería de Sistemas</span>
+                    <h1>Hey, <span id="typing" class="resaltado-celeste"></span></h1>
+                    <p class="info-inicio">Estudiante de <span class="resaltado-amarillo">Ingeniería de
+                            Sistemas</span>
                         |
                         Chiclayo, Perú<br>
                         Enfoque en desarrollo web, especializado en la creación<br> de soluciones
@@ -41,12 +48,28 @@
                     </p>
 
                     <div class="botones">
-                        <button class="botones-principales"><img class="iconos-redes" src="./img/file-cv-svgrepo-com.svg" alt="">Descargar
-                            CV</button>
-                        <button class="botones-principales"><img class="iconos-redes" src="./img/linkedin-svgrepo-com.svg" alt="">Linkedin</button>
-                        <button class="botones-principales"><img class="iconos-redes" src="./img/github-142-svgrepo-com.svg" alt="">GitHub</button>
-                        <button class="botones-principales"><img class="iconos-redes" src="./img/email-svgrepo-com.svg"
-                                alt="">jheymybm@hotmail.com</button>
+
+                        <a class="botones-principales" href="./cv.pdf" download>
+                            <img class="iconos-redes" src="./img/file-cv-svgrepo-com.svg" alt="">
+                            Descargar CV
+                        </a>
+
+                        <a class="botones-principales"
+                            href="https://www.linkedin.com/in/jheymy-barboza-mondragon-423132387/" target="_blank">
+                            <img class="iconos-redes" src="./img/linkedin-svgrepo-com.svg" alt="">
+                            Linkedin
+                        </a>
+
+                        <a class="botones-principales" href="https://github.com/Jhey8" target="_blank">
+                            <img class="iconos-redes" src="./img/github-142-svgrepo-com.svg" alt="">
+                            GitHub
+                        </a>
+
+                        <a class="botones-principales" href="mailto:jheymybm@hotmail.com">
+                            <img class="iconos-redes" src="./img/email-svgrepo-com.svg" alt="">
+                            jheymybm@hotmail.com
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -74,7 +97,8 @@
                         <img class="iconos-sobremi" src="./img/rocket-svgrepo-com.svg" alt="">
                         <h3>Mi Objetivo</h3>
                     </div>
-                    <p class="descripcion">Crecer como desarrollador, fortalecer mis habilidades técnicas y participar
+                    <p class="descripcion">Crecer como desarrollador, fortalecer mis habilidades técnicas y
+                        participar
                         en proyectos que generen impacto, aprendiendo constantemente nuevas tecnologías y buenas
                         prácticas</p>
 
@@ -108,7 +132,8 @@
                         <p>Página web informativa para <br>
                             una
                             pastelería, donde se usó <br> HTML, CSS y JS</p>
-                        <button class="boton-ver-proyecto"><a href="https://jhey8.github.io/Sweet_Delight/">Ver Proyecto</a></button>
+                        <button class="boton-ver-proyecto"><a href="https://jhey8.github.io/Sweet_Delight/">Ver
+                                Proyecto</a></button>
 
                     </div>
 
@@ -122,17 +147,36 @@
     </main>
 
     <footer id="contactame">
-        <h2>Contactame</h2>
+        <h2>Contáctame</h2>
         <div class="botones-footer">
-            <button class="botons-pie"><img class="iconos-footer" src="./img/github-142-svgrepo-com.svg" alt=""><a href="https://github.com/Jhey8"></a></button>
-            <button class="botons-pie"><img class="iconos-footer" src="./img/linkedin-svgrepo-com.svg" alt=""><a href="https://www.linkedin.com/in/jheymy-barboza-mondragon-423132387/"></a></button>
-            <button class="botons-pie"><img class="iconos-footer" src="./img/email-svgrepo-com.svg" alt=""><a href="jheymybm@hotmail.com"></a></button>
-            <button class="botons-pie"><img class="iconos-footer" src="./img/facebook-176-svgrepo-com.svg" alt=""><a href="https://www.facebook.com/profile.php?id=61550847538088"></a></button>
-            <button class="botons-pie"><img class="iconos-footer" src="./img/instagram-167-svgrepo-com.svg" alt=""><a href="https://www.instagram.com/jhey_barboza10/"></a></button>
+            <a class="botons-pie luz" href="https://github.com/Jhey8" target="_blank">
+                <img class="iconos-footer" src="./img/github-142-svgrepo-com.svg" alt="">
+            </a>
+
+            <a class="botons-pie luz" href="https://www.linkedin.com/in/jheymy-barboza-mondragon-423132387/"
+                target="_blank">
+                <img class="iconos-footer" src="./img/linkedin-svgrepo-com.svg" alt="">
+            </a>
+
+            <a class="botons-pie luz" href="mailto:jheymybm@hotmail.com">
+                <img class="iconos-footer" src="./img/email-svgrepo-com.svg" alt="">
+            </a>
+
+            <a class="botons-pie luz" href="https://www.facebook.com/profile.php?id=61550847538088" target="_blank">
+                <img class="iconos-footer" src="./img/facebook-176-svgrepo-com.svg" alt="">
+            </a>
+
+            <a class="botons-pie luz" href="https://www.instagram.com/jhey_barboza10/" target="_blank">
+                <img class="iconos-footer" src="./img/instagram-167-svgrepo-com.svg" alt="">
+            </a>
 
         </div>
-       
+
     </footer>
+
+    <canvas id="particles"></canvas>
+
+    <script src="./js/index.js"></script>
 
 </body>
 
