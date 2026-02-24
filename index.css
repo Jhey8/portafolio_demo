@@ -108,6 +108,10 @@ li {
 
 .foto-perfil:hover {
     transform: rotate(360deg) scale(1.05);
+    box-shadow:
+        0 0 15px rgba(58, 166, 255, 0.6),
+        0 0 30px rgba(58, 166, 255, 0.5),
+        0 0 60px rgba(58, 166, 255, 0.4);
 }
 
 h1 {
@@ -159,16 +163,23 @@ h1 {
     font-weight: 600;
 }
 
-
 .botones-principales:hover {
 
     transform: scale(1.2);
+    background-color: #51b1ff;
+    color: #fff;
 
+}
+
+.botones-principales:hover .iconos-redes {
+    filter: brightness(0) invert(1);
 }
 
 section {
     scroll-margin-top: 100px;
 }
+
+
 
 button {
     display: flex;
@@ -209,6 +220,15 @@ h3 {
     border-radius: 5px;
     padding: 15px;
     background-color: #111145;
+}
+
+.cuadro-caracteristica:hover {
+    transform: scale(1.02);
+    box-shadow:
+        0 0 15px rgba(58, 166, 255, 0.6),
+        0 0 30px rgba(58, 166, 255, 0.5),
+        0 0 60px rgba(58, 166, 255, 0.4);
+    cursor: pointer;
 }
 
 .subtitulo-cuadros {
@@ -324,6 +344,10 @@ h2 {
     transform: scale(1.2);
 }
 
+.derechos {
+    text-align: center;
+    color: #fff;
+}
 
 @media (max-width:760px) {
 
@@ -406,6 +430,11 @@ h2 {
 
     .cuadros {
         padding-top: 20px;
+    }
+
+    .derechos {
+        text-align: center;
+        color: #fff;
     }
 }
 
@@ -490,6 +519,11 @@ h2 {
 
     .cuadros {
         padding-top: 20px;
+    }
+
+    .derechos {
+        text-align: center;
+        color: #fff;
     }
 
 }
