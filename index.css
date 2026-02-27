@@ -22,6 +22,14 @@ body {
     gap: 90px;
     margin: 0;
     padding: 0;
+    
+}
+
+
+li:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    
 }
 
 
@@ -53,6 +61,7 @@ body {
     position: fixed;
     top: 0;
     height: 80px;
+    
 
 }
 
@@ -67,6 +76,7 @@ ul {
 li {
 
     list-style-type: none;
+    transition: 0.3s ease;
 }
 
 .nav a {
@@ -161,6 +171,7 @@ h1 {
     color: #000;
     gap: 4px;
     font-weight: 600;
+    transition: 0.3s ease;
 }
 
 .botones-principales:hover {
@@ -220,6 +231,7 @@ h3 {
     border-radius: 5px;
     padding: 15px;
     background-color: #111145;
+    transition: 0.3s ease;
 }
 
 .cuadro-caracteristica:hover {
@@ -265,25 +277,31 @@ h3 {
     border: 1px solid #51b1ff;
     border-radius: 5px;
     overflow: hidden;
-    padding: 10px;
+    padding: 15px;
 
 }
 
 .boton-ver-proyecto {
     font-size: 12px;
     font-weight: 600;
-
-
-}
-
-.boton-ver-proyecto a {
+    transition: 0.3s ease;
     text-decoration: none;
     color: #000;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 6px;
+    display: inline-flex;
+    
 }
+
 
 .boton-ver-proyecto:hover {
     transform: scale(1.1);
+    background-color: #51b1ff;
+    cursor: pointer;
+    color: #fff;
 }
+
 
 h4 {
     margin: 0;
@@ -329,6 +347,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s ease;
 }
 
 .luz:hover {
@@ -348,6 +367,29 @@ h2 {
     text-align: center;
     color: #fff;
 }
+
+.btnWhatsapp {
+    position: fixed;
+    right: 40px;
+    bottom: 50px;
+    transition: 0.3s ease;
+
+
+}
+
+.btnWhatsapp {
+    height: 70px;
+    width: 70px;
+    display: block;
+}
+
+.btnWhatsapp:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+
 
 @media (max-width:760px) {
 
@@ -436,6 +478,20 @@ h2 {
         text-align: center;
         color: #fff;
     }
+
+
+    .btnWhatsapp {
+        position: fixed;
+        top: 15px;
+        right: 30px;
+
+    }
+
+    .btnWhatsapp {
+        height: 50px;
+        width: 50px;
+    }
+
 }
 
 @media (max-width:920px) {
@@ -525,5 +581,21 @@ h2 {
         text-align: center;
         color: #fff;
     }
+
+
+    
+    .btnWhatsapp {
+        position: fixed;
+        top: 15px;
+        right: 30px;
+
+    }
+
+    .btnWhatsapp img {
+        height: 50px;
+        width: 50px;
+    }
+
+   
 
 }

@@ -5,6 +5,7 @@ const ctx = canvas.getContext("2d");
 const texto = "soy Jheymy";
 const typingEl = document.getElementById("typing");
 
+
 //btn hamburguesa
 btnHam.addEventListener("click", () => {
     const abierto = menu.classList.toggle("is-open");
@@ -81,3 +82,12 @@ function animar() {
 }
 
 animar();
+
+//boton whatsApp
+const btnWhatsApp = document.getElementById("btnWhatsApp");
+const numero = "942231107";
+const mensaje = "Hola Jhey, buen día. Estoy interesado(a) en el desarrollo de una página web y me gustaría recibir información sobre tus servicios, costos y tiempos de entrega. Quedo atento a tu respuesta.";
+
+btnWhatsApp.addEventListener("click", ()=>{
+    window.open(`https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`, target= "_blank");
+});
